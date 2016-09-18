@@ -1,0 +1,13 @@
+# JavaScript
+ function func(n)     
+    {     
+    f=1;     
+    for(i=1;i<=n;i++) f=f*i;     // в цикле вычисляем факториал, f
+    return (f);     
+    }  
+var n = prompt("Press number" , "");
+if (n < 0) {
+  alert("It is wrong number" + n);
+} else {
+alert( func(n) );
+}
