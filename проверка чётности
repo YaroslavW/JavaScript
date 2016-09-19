@@ -1,0 +1,9 @@
+function isEven(n) {
+var n = prompt("Press num" , ""); // проверка чётности
+  if (n % 2 == 0) {
+    return true;
+  }
+
+  return false;
+}
+alert( isEven(n));
