@@ -1,3 +1,3 @@
 # JavaScript
-var n = 355;
-alert(n.toString(16));
+var n = 255;
+alert(n.toString(16));//ff
