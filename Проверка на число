@@ -1,0 +1,8 @@
+# JavaScript
+var y = prompt("Press some number" , "-12.5");
+
+if (isNaN(y)) {
+alert("Строка преобразовалась в NaN .не число");
+} else {
+alert("Number");
+}
