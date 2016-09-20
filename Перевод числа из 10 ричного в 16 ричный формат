@@ -1,0 +1,3 @@
+# JavaScript
+var n = 355;
+alert(n.toString(16));
