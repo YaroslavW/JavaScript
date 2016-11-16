@@ -1,0 +1,2 @@
+myStr = "Осень зима лето весна";
+alert(myStr.split('').reverse().join(''));
