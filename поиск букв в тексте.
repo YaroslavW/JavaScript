@@ -1,0 +1,9 @@
+var myStr ="Лото было не то что бы хорошо но точно не то что надо!";
+var target = "то";
+var pos = 0;
+while(true){
+var fpos = myStr.indexOf(target, pos);
+if(fpos == -1) break;
+alert(fpos);
+pos = fpos + 1;
+}
