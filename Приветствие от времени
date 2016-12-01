@@ -1,0 +1,13 @@
+<p id="demo">Good Evening!</p>
+<script>
+if (new Date().getHours() >12 && new Date().getHours() < 18) {
+    document.getElementById("demo").innerHTML = "Good day!";
+} else if(new Date().getHours() > 6 && new Date().getHours() < 12) {
+    document.getElementById("demo").innerHTML = "Good Morning!";
+} else if(new Date().getHours() >18 && new Date().getHours() < 24) {
+    document.getElementById("demo").innerHTML = "Good day!";
+} else{
+
+ document.getElementById("demo").innerHTML = "Good night!";
+};
+</script>
