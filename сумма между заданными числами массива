@@ -1,0 +1,27 @@
+var arr=[1, 4];
+maxAr = Math.max(...arr);
+minAr = Math.min(...arr);
+var Sum=0;
+function myFun(arr){
+for(i=minAr;i<=maxAr;i++){
+Sum +=i;
+}
+alert(Sum);
+}
+myFun(arr);//10;
+
+//Ещё одно решение так:
+
+function sumAll(arr) {
+  var MinNumber = Math.min(...arr);
+  var MaxNumber = Math.max(...arr);
+  var newAr = [];
+for(i=MinNumber; i<=MaxNumber; i++){
+  newAr.push(i);
+}
+ return newAr.reduce((curr, next) => {
+    return curr + next;
+  });
+}
+
+sumAll([1, 4]);
