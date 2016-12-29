@@ -1,0 +1,19 @@
+var Friend = function(mood){
+   this.mood = mood;
+if(mood === "nice"){
+   this.talk = function(){
+     alert("Hello!");
+   };
+} else if(mood === "bad"){
+     this.talk = function(){
+     alert("Sorry..");
+     };
+} else {
+     this.talk = function(){
+     alert("Hi");
+     };
+}
+}
+var friendMood = prompt("Haw are you?","");
+var David = new Friend(friendMood);
+David.talk();
