@@ -1,0 +1,23 @@
+function Rectangle(w, h){
+     this.width = w;
+     this.height = h;
+     this.area = function(){
+      return this.width * this.height;
+     }
+}
+var myRect_w = prompt("Press width");
+var myRect_h = prompt("press height");
+var myRect = new Rectangle(myRect_w, myRect_h);
+alert(myRect.area());
+// БЕЗ ПРОТОТИПА ВЫШЕ А НИЖЕ ПРАВИЛЬНО - С ПРОТОТИПОМ!
+function Rectangle(w, h){
+     this.width = w;
+     this.height = h;
+}
+Rectangle.prototype.area = function(){
+      return this.width * this.height;
+     }
+var myRect_w = prompt("Press width");
+var myRect_h = prompt("press height");
+var myRect = new Rectangle(myRect_w, myRect_h);
+alert(myRect.area());
