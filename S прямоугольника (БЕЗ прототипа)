@@ -21,3 +21,21 @@ var myRect_w = prompt("Press width");
 var myRect_h = prompt("press height");
 var myRect = new Rectangle(myRect_w, myRect_h);
 alert(myRect.area());
+
+//Ниже с отдельным именем объекта и прототипа
+function Rectangle(w, h){
+     this.width = w;
+     this.height = h;
+}
+Rectangle.prototype.area = function(){
+      return this.width * this.height;
+     }
+Rectangle.prototype.name = "RECTANGLE"; //имя прототипа
+var somRect = new Rectangle(35, 2);
+somRect.name = "Xy";                               // Имя объекта
+var myRect_w = prompt("Press width");
+var myRect_h = prompt("press height");
+var myRect = new Rectangle(myRect_w, myRect_h);
+alert(myRect.area());      // Покажет площад
+alert(myRect.name);      // RECTANGLE - потому что прототип (для всех)
+alert(somRect.name);    // Покажет отдельное имя - конкретно заданное!
