@@ -1,0 +1,2 @@
+ var str = "ILoveJavaScript";
+ alert(str.replace(/([a-zA-Z])([^a-zA-Z]|(?=[A-Z]))/g,"$1 "));
