@@ -1,0 +1,18 @@
+
+function steamrollArray(arr) {
+  // I'm a steamroller, baby
+  var newArray = [];
+  myFunction(arr);
+  function myFunction(arr){
+    arr.forEach(function(subarray){
+      if(!Array.isArray(subarray)) {
+        newArray.push(subarray);
+      } else {
+        myFunction(subarray);
+      }
+    });
+  }
+  return newArray;
+}
+
+steamrollArray([1, [2], [3, [[4]]]]);
