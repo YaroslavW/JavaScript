@@ -1,0 +1,20 @@
+//1 case:
+var arrays = [[1, 2, 3],[4, 5],[6]];
+var myArr = [];
+function comar(arrays){
+    for(var i = 0; i < arrays.length; i++){
+       myArr=myArr.concat(arrays[i]);
+    }
+    return myArr;
+}
+alert(comar(arrays));
+//[1,2,3,4,5,6];
+
+//2 case:-reduce
+var arr = [[1, 2, 3],[4, 5],[6]];
+var res =[];
+res = arr.reduce(function(a,b){
+    return a.concat(b)
+});
+alert(res);
+//[1,2,3,4,5,6]
