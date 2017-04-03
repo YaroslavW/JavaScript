@@ -1,0 +1,12 @@
+var myArray = [2,3,6,4,1,5,3,4];
+function minint(myArray){
+ min = myArray[0];
+  max = min;
+  for (i = 1; i < myArray.length; ++i) {
+      if (myArray[i] > max) max = myArray[i];
+      if (myArray[i] < min) min = myArray[i];
+      
+  }
+alert(min);
+}
+minint(myArray);
