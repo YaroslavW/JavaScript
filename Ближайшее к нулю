@@ -1,0 +1,20 @@
+var arr =['-12',"23", '-7',2, 43, '-1',34];
+var arrDif = [];
+function closeZero(arr){
+    for(i = 0; i < arr.length; i++){
+        arr[i]= parseInt(arr[i]);
+if(arr[i]<0){
+        arr[i] =arr[i]*(-1);
+        arrDif.push(arr[i]);
+}else{
+     arrDif.push(arr[i]);
+}
+    }min = arrDif[0];
+    for(var k = 0; k < arrDif.length; k++){
+        if(arrDif[k] < min)
+            min = arrDif[k];
+    }
+    var t = arrDif.indexOf(min)
+    alert(arr[t]);
+} 
+closeZero(arr);
