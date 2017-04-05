@@ -1,0 +1,14 @@
+var arr = [2,34,-5,-88,34,2,32,45];
+function maxnum(arr){
+var maxnum = arr[0];
+var minnum =maxnum;
+	for(i=0;i < arr.length; i++){
+	if(arr[i]>maxnum)
+	maxnum=arr[i];
+    if(arr[i] < minnum)
+    minnum = arr[i];
+}
+alert(maxnum);
+alert(minnum);
+}
+maxnum(arr);//45,-88
