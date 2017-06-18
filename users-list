@@ -1,0 +1,12 @@
+// Простая функция, предназначенная для распечатки списка пользователей
+function userList( prefix, num, users ) {
+ // Проверка, что prefix — строка, num — число,
+ // а users — массив
+ strict( [ String, Number, Array ], arguments );
+ // Выполнение итерации до 'num' пользователей
+ for ( var i = 0; i < num; i++ ) {
+28
+ // Отображение сообщения о каждом пользователе
+ print( prefix + ": " + users[i] );
+ }
+}
