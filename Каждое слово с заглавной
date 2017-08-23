@@ -1,0 +1,11 @@
+var text = 'nhfv hfv hfv pam pam any words';
+function upperCaser(text){
+var arr = text.split(' ');
+var result = [];
+for(i = 0; i < arr.length; i++){
+    var word = arr[i][0].toUpperCase() + arr[i].slice(1);
+    result.push(word);
+}
+alert( result.join(" "));
+}
+upperCaser(text);
