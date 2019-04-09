@@ -11,3 +11,10 @@ console.log("some text messege");
 // 1.length
 var str = "Jagathish";
 str.length; //9  --> returns the length of the string
+
+// Functions
+// 1 - toUpperCase()
+var str = "Jagathish";
+var str2 = str.toUpperCase();
+console.log(str);//Jagathish
+console.log(str2);//JAGATHISH 
