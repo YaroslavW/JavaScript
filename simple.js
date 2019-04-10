@@ -18,3 +18,9 @@ var str = "Jagathish";
 var str2 = str.toUpperCase();
 console.log(str);//Jagathish
 console.log(str2);//JAGATHISH 
+
+// 2 - toLowerCase()
+var str = "Jagathish";
+var str2 = str.toLowerCase();
+console.log(str);//Jagathish
+console.log(str2);//jagathish
