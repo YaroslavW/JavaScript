@@ -24,3 +24,10 @@ var str = "Jagathish";
 var str2 = str.toLowerCase();
 console.log(str);//Jagathish
 console.log(str2);//jagathish
+
+// 3 -trim()
+var str = "   Jagathish  ";var trimmedStr = str.trim(); console.log(trimmedStr); //"Jagathish"var str1 = "J  aga";
+var trimmedStr1 = str1.trim();
+console.log(trimmedStr1); //"J  aga"var str2 = "J   .";
+var trimmedStr2 = str2.trim();
+console.log(trimmedStr2); //"J   ."
