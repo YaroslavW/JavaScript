@@ -38,3 +38,8 @@ console.log(trimmedStr2); //"J   ."
 var str = "   Jagathish  ";
 var trimmedStr = str.trimStart();
 console.log(trimmedStr); //"Jagathish  "
+
+//  5 - trimEnd()
+var str = "   Jagathish  ";
+var trimmedStr = str.trimEnd();
+console.log(trimmedStr); //"   Jagathish"
