@@ -43,3 +43,13 @@ console.log(trimmedStr); //"Jagathish  "
 var str = "   Jagathish  ";
 var trimmedStr = str.trimEnd();
 console.log(trimmedStr); //"   Jagathish"
+
+// 6 - charAt() --> returns the character at the given index.
+var str = "Jagathish";
+console.log(str.charAt()); //the default index is 0 so "J"
+str.charAt(1); //a
+str.charAt(8); //h
+str.charAt(100); //"" if max than str length returns empty string
+str.charAt(-1); // for all negative values returns empty string
+//no type conversion takes pace so the result is empty string
+str.charAt("1"); //""
