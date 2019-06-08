@@ -53,3 +53,12 @@ str.charAt(100); //"" if max than str length returns empty string
 str.charAt(-1); // for all negative values returns empty string
 //no type conversion takes pace so the result is empty string
 str.charAt("1"); //""
+
+// 7 - charCodeAt() --> returns the UTF-16 character code
+// of the character at the given index
+
+// char code for a - 97, b =98 ,... z -122
+// char code for A - 65 ... Z - 90
+var str = "Jagathish";
+str.charCodeAt(0); // 74
+str.charCodeAt(1); // 97
