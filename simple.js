@@ -62,3 +62,8 @@ str.charAt("1"); //""
 var str = "Jagathish";
 str.charCodeAt(0); // 74
 str.charCodeAt(1); // 97
+
+// 8 - concat(arguments) concate the arguments
+// passed with the source string. It doesn’t change on source string.
+var str = "JavaScript";
+str.concat(" ", "Jeep", "."); // JavaScript Jeep.
