@@ -67,3 +67,6 @@ str.charCodeAt(1); // 97
 // passed with the source string. It doesn’t change on source string.
 var str = "JavaScript";
 str.concat(" ", "Jeep", "."); // JavaScript Jeep.
+
+var str = "JavaScript";
+var name = str + " " + "Jeep" + ".";
