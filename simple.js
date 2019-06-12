@@ -70,3 +70,15 @@ str.concat(" ", "Jeep", "."); // JavaScript Jeep.
 
 var str = "JavaScript";
 var name = str + " " + "Jeep" + ".";
+
+// 9 - includes(searchingString) returns whether searching
+// String may be found in source string.
+
+var str = "JavaScript Jeep";
+str.includes("Jeep"); // true
+str.includes("jeep"); // false --> case sensitive
+// we can also specify the index to start search
+
+var str = "Jeep";
+str.includes("Jeep", 0); // true
+str.includes("Jeep", 1); // false
