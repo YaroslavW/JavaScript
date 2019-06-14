@@ -82,3 +82,14 @@ str.includes("jeep"); // false --> case sensitive
 var str = "Jeep";
 str.includes("Jeep", 0); // true
 str.includes("Jeep", 1); // false
+
+// 10 - endsWith(searchString) returns whether the source
+// string ends with the searching string.
+var str = "JavaScript Jeep";
+str.endsWith("Jeep"); // true
+str.endsWith("jeep"); // false
+str.endsWith("Kepp"); // false
+// we can also specify the endPosition(index+1) to which the test should run
+var str = "Jeep";
+str.endsWith("J"); //false
+str.endsWith("J", 1); // true
