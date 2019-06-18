@@ -93,3 +93,15 @@ str.endsWith("Kepp"); // false
 var str = "Jeep";
 str.endsWith("J"); //false
 str.endsWith("J", 1); // true
+
+// 11.startsWith(searchString) returns whether the source
+// string starts with the searching string.
+var str = "JavaScript Jeep";
+str.startsWith("Java"); // truestr.
+startsWith("java"); // falsestr.
+startsWith("Ava"); // false
+// we can also specify the startPosition(index) to which the test should run
+var str = "JAVASCRIPT";
+str.startsWith("VA"); //false
+str.startsWith("VA", 2); // true
+str.startsWith("J", 1); // false --> because we are saying to start search from index 1 .
